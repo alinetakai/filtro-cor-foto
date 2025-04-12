@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro de Cor</title>
+    <link rel="shortcut icon" href="gato-arrepiado.png" type="image/png">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!--P5.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+    <style>
+        body {
+            background-color: lightpink;
+            text-align: center;
+            margin: 0;
+        }
+        input {
+            width: 235px;
+        }
+        h3 {
+            margin-top: 50px;
+            font-size: 25px !important;
+        }
+        label {
+            color: deeppink;
+        }
+        canvas {
+            border: 3px solid deeppink;
+            border-radius: 15px;
+            margin-top: 50px;
+            margin-left: 27%;
+            left: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="btn btn-primary">Introdução à P5.js - Filtro em Imagem</h3>
+        <hr>
+        <label>Cor do filtro (digite a cor em inglês): </label>
+        <input type="text" id="color_name" placeholder="Digite aqui a cor desejada em inglês">
+        <br><br>
+        <button onclick="filter_tint()" class="btn btn-warning">Aplicar Filtro</button>
+        <br><br>
+        <button onclick="take_snapshot()" class="btn btn-success">Tirar Foto</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
